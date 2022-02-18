@@ -1,0 +1,15 @@
+C:\Users\giacomo.satta\ConsoleApplicationDemo\bin\Debug\net6.0\ConsoleApplicationDemo.exe
+C:\Users\giacomo.satta\ConsoleApplicationDemo\bin\Debug\net6.0\ConsoleApplicationDemo.deps.json
+C:\Users\giacomo.satta\ConsoleApplicationDemo\bin\Debug\net6.0\ConsoleApplicationDemo.runtimeconfig.json
+C:\Users\giacomo.satta\ConsoleApplicationDemo\bin\Debug\net6.0\ConsoleApplicationDemo.dll
+C:\Users\giacomo.satta\ConsoleApplicationDemo\bin\Debug\net6.0\ref\ConsoleApplicationDemo.dll
+C:\Users\giacomo.satta\ConsoleApplicationDemo\bin\Debug\net6.0\ConsoleApplicationDemo.pdb
+C:\Users\giacomo.satta\ConsoleApplicationDemo\obj\Debug\net6.0\ConsoleApplicationDemo.csproj.AssemblyReference.cache
+C:\Users\giacomo.satta\ConsoleApplicationDemo\obj\Debug\net6.0\ConsoleApplicationDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\giacomo.satta\ConsoleApplicationDemo\obj\Debug\net6.0\ConsoleApplicationDemo.AssemblyInfoInputs.cache
+C:\Users\giacomo.satta\ConsoleApplicationDemo\obj\Debug\net6.0\ConsoleApplicationDemo.AssemblyInfo.cs
+C:\Users\giacomo.satta\ConsoleApplicationDemo\obj\Debug\net6.0\ConsoleApplicationDemo.csproj.CoreCompileInputs.cache
+C:\Users\giacomo.satta\ConsoleApplicationDemo\obj\Debug\net6.0\ConsoleApplicationDemo.dll
+C:\Users\giacomo.satta\ConsoleApplicationDemo\obj\Debug\net6.0\ref\ConsoleApplicationDemo.dll
+C:\Users\giacomo.satta\ConsoleApplicationDemo\obj\Debug\net6.0\ConsoleApplicationDemo.pdb
+C:\Users\giacomo.satta\ConsoleApplicationDemo\obj\Debug\net6.0\ConsoleApplicationDemo.genruntimeconfig.cache
