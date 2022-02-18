@@ -10,18 +10,12 @@ CheckTheSum(array,target);
 
 void CheckTheSum(int[] intArray,int target){
     bool flag = false;
+    HashSet<long> hashSet = new HashSet<long>();
 
-    for(int i = 0;i<intArray.Length;i++){
-        for(int j=0; j<intArray.Length;j++){
-            int tempSum = intArray[i] + intArray[j];
-            if(target == tempSum)
-            {
-                flag = true;
-                break;
-            }              
-        }
-        if(flag)
-            break;
+    foreach(int i in intArray){
+        if(hashSet.Contains(target-i))
+        flag = true;
+        hashSet.Add(i);
     }
 
     if(flag)
