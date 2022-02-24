@@ -1,5 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+#region  CheckTheSum 
+
 //Given a list of numbers and a number k, return wheter any two numbers from the list add up to k
 //ES: given [10,15,3,7] and k=17, return true because 10+7 is 17
 //Asked by Google
@@ -25,6 +27,9 @@ void CheckTheSum(int[] intArray,int target){
         Console.WriteLine("Il numero non è una somma di due numeri dell'array");
 }
 
+#endregion
+
+#region ArrayProduct
 //Given an array of integers, return a new array such that each element at index i of the new array is the product of all the numbers in the original array except the one at i
 //ES: If our input was [1, 2, 3, 4, 5], the expected output would be [120, 60, 40, 30, 24]
 //Asked by Uber
@@ -47,14 +52,16 @@ void ArrayProduct(int[] intArray){
     }
     Console.WriteLine(outputArray);
 }
+#endregion
 
+#region  CheckLowestPositive
 //Given an array of integers, find the first missing positive integer in linear time and constant space. In other words, find the lowest positive integer that does not exist in the array. The array can contain duplicates and negative numbers as well.
 //For example, the input [3, 4, -1, 1] should give 2. The input [1, 2, 0] should give 3.
 //Asked by Stripe
 
-int [] array = {2,1,-1,0};
-int size = array.Length;
-CheckLowestPositive(array);
+ int [] array = {2,1,-1,0};
+ int size = array.Length;
+// CheckLowestPositive(array);
 
 void CheckLowestPositive(int[] arr){
 
@@ -74,7 +81,6 @@ void CheckLowestPositive(int[] arr){
         
         Console.WriteLine("Il numero mancante è:"+missing); 
 }
-
  static int segregate(int[] arr, int size)
     {
         int j = 0, i;
@@ -94,8 +100,7 @@ void CheckLowestPositive(int[] arr){
         return j;
     }
 
- static int findMissingPositive(int[] arr, int size)
-    {
+ static int findMissingPositive(int[] arr, int size){
         int i;
  
         // Mark arr[i] as visited by making
@@ -117,3 +122,62 @@ void CheckLowestPositive(int[] arr){
         // start from 0
         return size + 1;
     }
+
+#endregion  
+
+#region DecodeNumber
+//Given the mapping a = 1, b = 2, ... z = 26, and an encoded message, count the number of ways it can be decoded.
+//For example, the message '111' would give 3, since it could be decoded as 'aaa', 'ka', and 'ak'.
+//Asked by Facebook
+
+// A naive recursive C# implementation
+// to count number of decodings that
+// can be formed from a given digit sequence
+char[] digits = { '1', '2', '3', '4' };
+DecodeNumber(digits);
+void DecodeNumber(char[] digits) {
+	int n = digits.Length;
+	Console.Write("Count is ");
+	Console.Write(countWays(digits, n));		
+}
+
+static int countDecoding(char[] digits, int n)
+	{
+		// base cases
+		if (n == 0 || n == 1)
+			return 1;
+
+		// Initialize count
+		int count = 0;
+
+		// If the last digit is not 0, then
+		// last digit must add to
+		// the number of words
+		if (digits[n - 1] > '0')
+			count = countDecoding(digits, n - 1);
+
+		// If the last two digits form a number
+		// smaller than or equal to 26, then
+		// consider last two digits and recur
+		if (digits[n - 2] == '1'
+			|| (digits[n - 2] == '2'
+				&& digits[n - 1] < '7'))
+			count += countDecoding(digits, n - 2);
+
+		return count;
+	}
+
+// Given a digit sequence of length n,
+	// returns count of possible decodings by
+	// replacing 1 with A, 2 with B, ... 26 with Z
+	static int countWays(char[] digits, int n)
+	{
+		if (n == 0 || (n == 1 && digits[0] == '0'))
+			return 0;
+		return countDecoding(digits, n);
+	}
+
+
+#endregion
+
+
